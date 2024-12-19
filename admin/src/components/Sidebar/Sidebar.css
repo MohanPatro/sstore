@@ -1,0 +1,79 @@
+/* Sidebar Container */
+.sidebar {
+    width: 20%;
+    min-height: 100vh;
+    background-color: #f5f7fa;
+    border-right: 1px solid #e2e2e2;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    transition: width 0.3s ease;
+}
+
+/* Sidebar Options */
+.sidebar-options {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Sidebar Option */
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+/* Active Sidebar Option */
+.sidebar-option.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    transform: translateX(4px);
+}
+
+/* Sidebar Option Hover Effect */
+.sidebar-option:hover {
+    background-color: #f0f5ff;
+    transform: translateX(4px);
+}
+
+/* Sidebar Option Icon and Text */
+.sidebar-option i {
+    font-size: 18px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.sidebar-option:hover i {
+    color: #0056b3;
+}
+
+/* Text hiding on small screens */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 10%;
+    }
+
+    .sidebar-option p {
+        display: none;
+    }
+
+    .sidebar-option i {
+        font-size: 22px;
+    }
+
+    .sidebar-option {
+        gap: 10px;
+        padding: 10px 15px;
+    }
+}

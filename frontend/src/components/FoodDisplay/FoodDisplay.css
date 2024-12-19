@@ -1,0 +1,51 @@
+.food-display{
+    margin-top: 30px;
+
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top:30px;
+    gap:30px;
+    row-gap: 50px;
+}
+
+
+/* Search and Price Filter Styling */
+.filters {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar,
+  .price-filter {
+    padding: 10px 5px;
+    width: 50%;
+    max-width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: 0.3s;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .search-bar:focus,
+  .price-filter:focus {
+    border-color: #ff7f50;
+    outline: none;
+    /* box-shadow: 0 4px 8px rgba(255, 127, 80, 0.3); */
+  }
+  
+  .search-bar::placeholder,
+  .price-filter::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }

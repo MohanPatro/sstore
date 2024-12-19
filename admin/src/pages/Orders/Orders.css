@@ -1,0 +1,169 @@
+/* Order Item Container */
+.order-item {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid  rgb(71, 138, 255);
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .heading{
+    margin-bottom: 20px;
+  }
+  
+  .order-item-food,
+  .order-item-name {
+    font-weight: 600;
+  }
+  
+  .order-item-name {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .order-item-address {
+    margin-bottom: 10px;
+  }
+  
+  .order-item select {
+    background-color: #eff5ff;
+    border: 1px solid  rgb(71, 138, 255);
+    width: max(10vw, 120px);
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .order-item img {
+    max-width: 50px;
+    object-fit: cover;
+  }
+  
+  /* Filters Section */
+  .order-filters {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color:white;
+  }
+
+  .filter-dropdown,
+  .date-input,
+  .user-search {
+    background-color: #eff6ff;
+    border: 1px solid #ccc;
+    width: max(10vw, 120px);
+    padding: 10px;
+    outline: none;
+    margin: 0 10px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+
+  
+  .date-range {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1000px) {
+    /* Order Item Grid for Tablet */
+    .order-item {
+      font-size: 12px;
+      grid-template-columns: 0.5fr 2fr 1fr;
+      padding: 15px 8px;
+      margin: 20px 0;
+    }
+  
+    .order-item select {
+      padding: 5px;
+      font-size: 12px;
+    }
+  
+    .order-item img {
+      width: 40px;
+    }
+  
+    /* Filters Section */
+    .order-filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .filter-dropdown,
+    .date-input,
+    .user-search {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .date-range {
+      /* flex-direction: column; */
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Order Item for Mobile */
+    .order-item {
+      grid-template-columns: 1fr 2fr;
+      padding: 10px;
+      margin: 15px 0;
+    }
+  
+    .order-item img {
+      width: 35px;
+      margin-bottom: 10px;
+    }
+  
+    .order-item-food {
+      font-size: 13px;
+    }
+  
+    .order-item-name {
+      font-size: 14px;
+    }
+  
+    .order-item-address {
+      font-size: 12px;
+    }
+  
+    .order-item select {
+      font-size: 12px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    /* Filters Section for Mobile */
+    .order-filters {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .filter-dropdown,
+    .date-input,
+    .user-search {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  
+    .date-range {
+      flex-direction: column;
+      width: 100%;
+
+    }
+  }
+  
